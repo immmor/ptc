@@ -330,15 +330,19 @@ body, html {
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
     <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+    <!-- <form action="/action_page.php" target="_blank"> -->
+    <form>
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="num"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button w3-black" type="submit">
+        <!-- 
+        <button class="w3-button w3-black" type="submit" onclick="skip()">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
+        -->
+        <input type="button" onclick="skip()" value="SEND MESSAGE">
       </p>
     </form>
     <!-- Image of location/map -->
@@ -367,6 +371,17 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+  
+  
+// secret skip
+function skip(){
+var num = document.getElementById("num").value;
+if(num==1){
+window.location.href = "www.baidu.com";
+}else if(num=='qq'){
+window.location.href = "https://www.qq.com/";
+}
 }
 
 
