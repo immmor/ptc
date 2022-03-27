@@ -66,6 +66,7 @@ body, html {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
+    <p id="date" style="font-color:white;">vvv</p>
     <span class="w3-jumbo w3-hide-small">干点有用的事儿</span><br>
     <!-- <span class="w3-xxlarge w3-hide-large w3-hide-medium">干点有用的事儿</span> -->
     <span class="w3-hide-large w3-hide-medium" style="font-size:41px">干点有用的事儿</span><br>
@@ -392,6 +393,18 @@ function addEmailDesign(){
     var emailDesign = "design@ptc.com";
     document.getElementById("addEmail").innerHTML=emailDesign;
 }
+  
+
+// 问候语
+now = new Date(),hour = now.getHours() 
+if(hour < 6){document.write("凌晨好！")} 
+else if (hour < 9){document.write("早上好！")} 
+else if (hour < 12){document.write("上午好！")} 
+else if (hour < 14){document.write("中午好！")} 
+else if (hour < 17){document.getElementById("date").innerHTML="asdf"} 
+else if (hour < 19){document.write("傍晚好！")} 
+else if (hour < 22){document.write("晚上好！")} 
+else {document.write("夜里好！")} 
   
   
 // Modal Image Gallery
