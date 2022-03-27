@@ -337,7 +337,7 @@ body, html {
     <br>
     <!-- <form action="/action_page.php" target="_blank"> -->
     <form>
-      <p><input class="w3-input w3-border" type="text" placeholder="名字" required name="名字" id="num"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="名字" required name="名字" id="hik"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="邮箱" required name="邮箱"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="主题" required name="主题"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="内容" required name="内容"></p>
@@ -418,16 +418,16 @@ function onClick(element) {
   
 // secret skip
 function skip(){
-var num = document.getElementById("num").value;
-if(num=='baidu'){
+var hik = document.getElementById("hik").value;
+if(hik=='baidu'){
 window.open("https://www.baidu.com/");
-}else if(num=='qq'){
+}else if(hik=='qq'){
 window.open("https://www.qq.com/");
-}else if(num=='hack'){
+}else if(hik=='hack'){
 window.open("https://immmor.github.io/ptc/ptcEdit.html");
-}else if(num=='cvc'){
+}else if(hik=='cvc'){
 window.open("https://immmor.github.io/cv/cvc.html");
-}else if(num=='cve'){
+}else if(hik=='cve'){
 window.open("https://immmor.github.io/cv/cve.html");
 }
 }
