@@ -397,7 +397,7 @@ function addEmailDesign(){
 
 // 问候语
 now = new Date(),hour = now.getHours() 
-if(hour < 6){document.write("再睡会儿吧～")} 
+if(hour < 6){document.getElementById("date").innerHTML="再睡会儿吧～"} 
 else if (hour < 9){document.getElementById("date").innerHTML="早啊，今天天气怎么样？"} 
 else if (hour < 12){document.getElementById("date").innerHTML="早上开始奋斗！内卷！"} 
 else if (hour < 14){document.getElementById("date").innerHTML="中午吃点好的～"} 
